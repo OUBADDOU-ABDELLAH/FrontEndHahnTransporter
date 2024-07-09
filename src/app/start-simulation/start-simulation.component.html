@@ -1,0 +1,16 @@
+<div class="container">
+  <h2>Welcome to Hahn Cargo Simulation</h2>
+  <div class="user-info">
+    <p><strong>Username:</strong> {{ username }}</p>
+    <!-- Ajoutez d'autres informations personnelles ici -->
+  </div>
+
+  <div class="form-group">
+    <label for="transporterId">Transporter ID:</label>
+    <select id="transporterId" [(ngModel)]="transporterId" name="transporterId" class="form-control" required>
+      <option *ngFor="let id of transporterIds" [value]="id">{{ id }}</option>
+    </select>
+  </div>
+
+  <button (click)="onSubmit()" class="start-button">Start Simulation</button>
+</div>

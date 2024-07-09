@@ -1,0 +1,40 @@
+.custom-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .mat-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .mat-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .spacer {
+    flex: 1 1 auto;
+  }
+  
+  .nav-button {
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .nav-button:hover {
+    background-color: #1f0074; 
+    color: white; 
+  }
+  
+  @media (max-width: 600px) {
+    .nav-button {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  .toolbar{
+    height: fit-content;
+    background-color: #efefef;
+  }
